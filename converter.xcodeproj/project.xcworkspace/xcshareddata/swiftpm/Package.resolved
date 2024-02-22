@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "spatialvideo",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/juliofruta/spatialvideo",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3ad2aadcd371cee25b0e7e227b6b4fa3f4b4e633"
+      }
+    }
+  ],
+  "version" : 2
+}

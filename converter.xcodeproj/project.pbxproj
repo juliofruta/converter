@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4360E5122B86EE9600ADA74A /* spatialvideo in Frameworks */ = {isa = PBXBuildFile; productRef = 4360E5112B86EE9600ADA74A /* spatialvideo */; };
+		437662AD2B85BABA003B2584 /* spatialvideo in Frameworks */ = {isa = PBXBuildFile; productRef = 437662AC2B85BABA003B2584 /* spatialvideo */; };
 		437AAB342B85B55900961DC4 /* converterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437AAB332B85B55900961DC4 /* converterApp.swift */; };
 		437AAB362B85B55900961DC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437AAB352B85B55900961DC4 /* ContentView.swift */; };
 		437AAB382B85B55A00961DC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 437AAB372B85B55A00961DC4 /* Assets.xcassets */; };
 		437AAB3B2B85B55A00961DC4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 437AAB3A2B85B55A00961DC4 /* Preview Assets.xcassets */; };
-		437AAB452B85B55A00961DC4 /* converterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437AAB442B85B55A00961DC4 /* converterTests.swift */; };
 		437AAB4F2B85B55A00961DC4 /* converterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437AAB4E2B85B55A00961DC4 /* converterUITests.swift */; };
 		437AAB512B85B55A00961DC4 /* converterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437AAB502B85B55A00961DC4 /* converterUITestsLaunchTests.swift */; };
+		43DAA55E2B86C60900FD352B /* converterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437AAB442B85B55A00961DC4 /* converterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,7 @@
 		437AAB4A2B85B55A00961DC4 /* converterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = converterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		437AAB4E2B85B55A00961DC4 /* converterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = converterUITests.swift; sourceTree = "<group>"; };
 		437AAB502B85B55A00961DC4 /* converterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = converterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		43CD402F2B85CC590016E855 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				437662AD2B85BABA003B2584 /* spatialvideo in Frameworks */,
+				4360E5122B86EE9600ADA74A /* spatialvideo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +99,7 @@
 		437AAB322B85B55900961DC4 /* converter */ = {
 			isa = PBXGroup;
 			children = (
+				43CD402F2B85CC590016E855 /* Info.plist */,
 				437AAB332B85B55900961DC4 /* converterApp.swift */,
 				437AAB352B85B55900961DC4 /* ContentView.swift */,
 				437AAB372B85B55A00961DC4 /* Assets.xcassets */,
@@ -143,6 +149,10 @@
 			dependencies = (
 			);
 			name = converter;
+			packageProductDependencies = (
+				437662AC2B85BABA003B2584 /* spatialvideo */,
+				4360E5112B86EE9600ADA74A /* spatialvideo */,
+			);
 			productName = converter;
 			productReference = 437AAB302B85B55900961DC4 /* converter.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +225,9 @@
 				Base,
 			);
 			mainGroup = 437AAB272B85B55900961DC4;
+			packageReferences = (
+				4360E5102B86EE9600ADA74A /* XCRemoteSwiftPackageReference "spatialvideo" */,
+			);
 			productRefGroup = 437AAB312B85B55900961DC4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -266,7 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				437AAB452B85B55A00961DC4 /* converterTests.swift in Sources */,
+				43DAA55E2B86C60900FD352B /* converterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,6 +438,8 @@
 				DEVELOPMENT_TEAM = V9QPA276C7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = converter/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +469,8 @@
 				DEVELOPMENT_TEAM = V9QPA276C7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = converter/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -588,6 +605,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4360E5102B86EE9600ADA74A /* XCRemoteSwiftPackageReference "spatialvideo" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/juliofruta/spatialvideo";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4360E5112B86EE9600ADA74A /* spatialvideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4360E5102B86EE9600ADA74A /* XCRemoteSwiftPackageReference "spatialvideo" */;
+			productName = spatialvideo;
+		};
+		437662AC2B85BABA003B2584 /* spatialvideo */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = spatialvideo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 437AAB282B85B55900961DC4 /* Project object */;
 }
